@@ -1,33 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".MainActivity">
 
-    <!-- Entrada para el número n1 -->
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ingresa un número"
-        android:inputType="number" />
-
-    <!-- Botón para enviar la solicitud -->
-    <Button
-        android:id="@+id/btnSumar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sumar" />
-
-    <!-- Texto para mostrar el resultado -->
     <TextView
-        android:id="@+id/txtViewsResultado"
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Resultado: "
-        android:textSize="18sp" />
+        android:layout_marginTop="72dp"
+        android:text="CONSUMO DE SERVICIOS"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/consumo4"
+        android:layout_width="313dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:text="CONSUMO 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/consumo3" />
+
+    <Button
+        android:id="@+id/consumo1"
+        android:layout_width="313dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="104dp"
+        android:text="CONSUMO 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <Button
+        android:id="@+id/consumo2"
+        android:layout_width="313dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:text="CONSUMO 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/consumo1" />
+
+    <Button
+        android:id="@+id/consumo3"
+        android:layout_width="313dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:text="CONSUMO 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/consumo2" />
+
+    <Button
+        android:id="@+id/consumo5"
+        android:layout_width="313dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:text="CONSUMO 5: Figuras Geométricas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/consumo4" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/consumo5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Cliente express</string>
+
+    <string-array name="figuras_array">
+        <item>Rombo</item>
+        <item>Romboide</item>
+        <item>Deltoide</item>
+    </string-array>
 </resources>
