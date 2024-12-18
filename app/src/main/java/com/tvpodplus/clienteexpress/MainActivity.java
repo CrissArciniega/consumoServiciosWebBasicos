@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private FrameLayout contenedorFragmento;
     private LayoutInflater inflador;
 
-    private Button btnConsumo1, btnConsumo2, btnConsumo3, btnConsumo4, btnConsumo5;
+    private Button btnConsumo1, btnConsumo2, btnConsumo3, btnConsumo4, btnConsumo5, btnConsumo6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnConsumo3 = findViewById(R.id.consumo3);
         btnConsumo4 = findViewById(R.id.consumo4);
         btnConsumo5 = findViewById(R.id.consumo5);
+        btnConsumo6 = findViewById(R.id.consumo6);
 
         configurarBotones();
     }
@@ -57,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
         btnConsumo5.setOnClickListener(v -> {
             //Consumo5 Activity
             startActivity(new Intent(MainActivity.this, Consumo5.class));
+        });
+
+        btnConsumo6.setOnClickListener(v -> {
+            //Consumo4 Activity
+            startActivity(new Intent(MainActivity.this, Consumo6.class));
         });
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,19 +16,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/consumo4"
-        android:layout_width="313dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="12dp"
-        android:text="CONSUMO 4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/consumo3" />
 
     <Button
         android:id="@+id/consumo1"
@@ -60,6 +50,16 @@
         app:layout_constraintTop_toBottomOf="@id/consumo2" />
 
     <Button
+        android:id="@+id/consumo4"
+        android:layout_width="313dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:text="CONSUMO 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/consumo3" />
+
+    <Button
         android:id="@+id/consumo5"
         android:layout_width="313dp"
         android:layout_height="57dp"
@@ -69,11 +69,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/consumo4" />
 
+    <Button
+        android:id="@+id/consumo6"
+        android:layout_width="313dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:text="CONSUMO 6: Trinomio cuadrado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/consumo5" />
+
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/consumo5"
+        app:layout_constraintTop_toBottomOf="@id/consumo6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

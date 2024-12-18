@@ -17,6 +17,9 @@
         android:theme="@style/Theme.ClienteExpress"
         tools:targetApi="31">
         <activity
+            android:name=".Consumo6"
+            android:exported="false" />
+        <activity
             android:name=".Consumo5"
             android:exported="false" />
         <activity

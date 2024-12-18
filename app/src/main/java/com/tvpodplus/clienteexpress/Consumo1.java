@@ -44,7 +44,7 @@ public class Consumo1 extends AppCompatActivity {
         new Thread(() -> {
             HttpURLConnection connection = null;
             try {
-                URL url = new URL("http://10.10.16.78:3000/nombre");
+                URL url = new URL("http://192.168.56.1:3000/nombre");
                 connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
 

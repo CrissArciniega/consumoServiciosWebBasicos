@@ -54,6 +54,7 @@ public class Consumo5 extends AppCompatActivity {
 
         String urlServicio = "http://192.168.56.1:3000/figura/" + figura + "/" + param1 + "/" + param2;
 
+        // nuevo hilo para evitar el tráfico HTTP
         new Thread(() -> {
             HttpURLConnection connection = null;
             try {
